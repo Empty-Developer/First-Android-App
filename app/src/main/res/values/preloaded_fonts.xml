@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/unbounded</item>
+        <item>@font/unbounded_light</item>
+        <item>@font/unbounded_medium</item>
+    </array>
+</resources>

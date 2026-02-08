@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="333dp"
+    android:layout_height="100dp"
+    android:layout_marginTop="17dp"
+    android:layout_marginStart="38dp"
+    android:background="@drawable/border_radius"
+    android:elevation="4dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="49dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/food_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginStart="15dp"
+            android:layout_weight="1"
+            android:textColor="#39843D" />
+
+        <TextView
+            android:id="@+id/food_calories"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_weight="1"
+            android:textColor="#4CAF50" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="14dp"
+            android:layout_marginStart="15dp"
+            android:text="на 100г"
+            android:textColor="#63676E" />
+
+        <TextView
+            android:id="@+id/food_details"
+            android:layout_width="83dp"
+            android:layout_marginTop="14dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#63676E" />
+    </LinearLayout>
+</LinearLayout>

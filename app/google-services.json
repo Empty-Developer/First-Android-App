@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "605304727092",
+    "project_id": "greenstatus-602ed",
+    "storage_bucket": "greenstatus-602ed.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:605304727092:android:4a36f80df8f014c8064c61",
+        "android_client_info": {
+          "package_name": "com.example.greeanstatus"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbL3DwZGDTh8J5fZ3OTBivBsaOpLynK3Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserWindowScreen">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/profile_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F2FCE2"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/text_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/main_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="39dp"
+                    android:layout_marginTop="71dp"
+                    android:layout_marginBottom="24dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Профиль"
+                    android:textColor="#4CAF50"
+                    android:textSize="24dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/UserLayaut"
+                android:layout_width="333dp"
+                android:layout_height="600dp"
+                android:layout_marginBottom="200dp"
+                android:layout_marginStart="39dp"
+                android:background="@drawable/border_radius"
+                android:elevation="4dp"
+                android:orientation="vertical"
+                android:outlineProvider="background">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/profile_image"
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"
+                            android:layout_marginStart="101dp"
+                            android:layout_marginTop="30dp"
+                            android:src="@drawable/user_profile" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <Button
+                        android:id="@+id/btn_upload"
+                        android:layout_width="292dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="20dp"
+                        android:backgroundTint="#4CAF50"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Загрузить фото"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Имя"
+                        android:textColor="#767E89"
+                        android:textSize="13sp" />
+
+                    <EditText
+                        android:id="@+id/nameEditText"
+                        android:layout_width="292dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/border2_0"
+                        android:hint="  Введите Имя..."
+                        android:inputType="textPersonName"
+                        tools:ignore="ExtraText" />
+
+                    <EditText
+                        android:id="@+id/notesEditText"
+                        android:layout_width="292dp"
+                        android:layout_height="200dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/border2_0"
+                        android:gravity="top|start"
+                        android:hint="\n Введите здесь свои пометки..."
+                        android:inputType="textMultiLine"
+                        android:lines="8"
+                        android:maxLines="15"
+                        android:scrollbars="vertical" />
+
+                    <Button
+                        android:id="@+id/saveButton"
+                        android:layout_width="292dp"
+                        android:layout_height="60dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:backgroundTint="#4CAF50"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Сохранить"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/nav"
+        android:layout_width="match_parent"
+        android:layout_height="112dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:id="@+id/img_nav"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:onClick="startActivityHome"
+                app:srcCompat="@drawable/home_icon" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:onClick="startActivityCalculator"
+                app:srcCompat="@drawable/calculator_icon" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:onClick="startActivityFood"
+                app:srcCompat="@drawable/icon_apple" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:onClick="startActivityMap"
+                app:srcCompat="@drawable/icon_map" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/user_green" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/text_nav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="42dp"
+                android:layout_weight="1"
+                android:onClick="startActivityHome"
+                android:text="Главная"
+                android:textAlignment="center"
+                android:textColor="#6B7280" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="42dp"
+                android:layout_weight="1"
+                android:onClick="startActivityCalculator"
+                android:text="Калькулятор"
+                android:textAlignment="center"
+                android:textColor="#6B7280"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="42dp"
+                android:layout_weight="1"
+                android:onClick="startActivityFood"
+                android:text=" Еда  "
+                android:textAlignment="center"
+                android:textColor="#6B7280"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="42dp"
+                android:layout_weight="1"
+                android:onClick="startActivityMap"
+                android:text="   Магазины"
+                android:textAlignment="center"
+                android:textColor="#6B7280"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="42dp"
+                android:layout_weight="1"
+                android:text="Профиль"
+                android:textAlignment="center"
+                android:textColor="#4CAF50"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
