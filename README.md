@@ -1,6 +1,6 @@
 # Greean Status
 
-A health and wellness Android app that helps you track daily water intake, calculate calorie needs, browse food nutrition, explore a live map with real-time weather, and manage a personal profile — all backed by Firebase.
+A health and wellness Android app that helps you track daily water intake, calculate calorie needs, browse food nutrition, explore a live map with real-time weather, and manage a personal profile  all backed by Firebase.
 
 ---
 
